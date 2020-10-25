@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2"
+    android:background="#CEDCBB"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Datos recibidos de la calculadora"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#F10909">
+
+    </TextView>
+
+    //Este textview recibe los datos
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Valor 1"
+        android:textStyle="bold"
+        android:textColor="#0930F1">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvvalor1r"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#0930F1">
+
+    </TextView>
+
+    <TextView
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="Resultado"
+        android:textStyle="bold"
+        android:textColor="#0930F1">
+
+    </TextView>
+
+    <TextView
+        android:id="@+id/tvresultador"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textStyle="bold"
+        android:textColor="#0930F1">
+
+    </TextView>
+
+</LinearLayout>

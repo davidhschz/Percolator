@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/ruser"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textStyle="bold">
+
+    </TextView>
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/calculadora"
+        android:layout_gravity="center">
+
+    </ImageView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Primer numero"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/etvalor1"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:gravity="center"
+        android:hint="valor1">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Segundo numero"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/etvalor2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="numberDecimal"
+        android:hint="valor2"
+        android:gravity="center">
+
+    </EditText>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Resultado"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/tvsalida"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Formato de números:"
+            android:textStyle="bold"
+            android:gravity="center">
+
+        </TextView>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center">
+
+            <RadioButton
+                android:id="@+id/rbsi"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Sí">
+
+            </RadioButton>
+
+            <RadioButton
+                android:id="@+id/rbno"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="No">
+
+            </RadioButton>
+
+        </RadioGroup>
+
+        <CheckBox
+            android:id="@+id/cbiva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Incluye IVA"
+            android:layout_gravity="center">
+
+        </CheckBox>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+
+        <Button
+            android:id="@+id/btnsuma"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="+">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnresta"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="-">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnmultiplicacion"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="*">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btndivision"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="/">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btnc"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:text="C">
+
+        </Button>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnenviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Enviar"
+        android:textAllCaps="false">
+
+    </Button>
+
+
+</LinearLayout>
